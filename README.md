@@ -36,7 +36,7 @@
 
 <img src="./images/sc.jpg" />
 
-This is the official website of the RNPSMUN2023 Event organsized by NPS RNR, scheduled to be held on the 22nd and 23rd of July, 2024
+This is the official website of the RNPSMUN2024 Event organsized by NPS RNR, scheduled to be held on the 22nd and 23rd of July, 2024
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -58,7 +58,7 @@ Just go to the website <a href="https://github.com/rnpsmun2024/rnpsmun2024.githu
 
 ## Contact Us
 
-You can get in touch with us using rnpsmun2023@gmail.com
+You can get in touch with us using rnpsmun24@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
