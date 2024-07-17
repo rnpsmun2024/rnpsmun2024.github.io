@@ -1,0 +1,740 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by Pratham, Sambarta and Navneet
+	rnpsmun24 |
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RNPSMUN 2024</title>
+		<link rel="icon" type="image/x-icon" href="images/logo.png">
+		<link rel="icon" type="image/x-icon" href="images/logo.png">
+		<link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Trajan+Pro&display=swap">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			
+			function updateTimer() {
+    future = Date.parse("jul 22, 2024 8:00:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+				
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>days</span></div>' +
+        '<div>' + h + '<span>hours</span></div>' +
+        '<div>' + m + '<span>minutes</span></div>' +
+        '<div>' + s + '<span>seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
+			window.onload = function(){ 
+   
+				var modal = document.getElementById("myModal");
+				var modal2 = document.getElementById("myModal2");
+				var btn = document.getElementById("myBtn");
+				var btn2 = document.getElementById("myBtn2");
+				var span = document.getElementsByClassName("close")[0];
+				var span2 = document.getElementsByClassName("close2")[0]; 
+				btn.onclick = function() {
+			  		modal.style.display = "block";
+				}
+				btn2.onclick = function() {
+			  		modal2.style.display = "block";
+				}
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+				span2.onclick = function() {
+					modal2.style.display = "none";
+				}
+				window.onclick = function(event) {
+			  		if (event.target == modal) {
+					modal.style.display = "none";
+			  		}
+				}
+				window.onclick = function(event) {
+			  		if (event.target == modal2) {
+					modal2.style.display = "none";
+					}
+			  	}
+			}
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			
+
+#timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 30px #f1ad27;
+}
+
+#timer div {
+    display: inline-block;
+    min-width: 180px;
+}
+
+#timer div span {
+    color: #f1f0b1;
+    display: block;
+    font-size: .35em;
+    font-weight: 400;
+}
+		body {font-family: Arial, Helvetica, sans-serif;}
+		
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%; 
+		  overflow: auto; 
+		  background-color: rgb(0, 0, 0); 
+		  background-color: rgba(0, 0, 0, 0); 
+		}
+		
+		.modal-content {
+		  position: relative;
+		  background-image: linear-gradient(to right, #0f3774, rgb(0, 0, 0));
+		  margin: auto;
+		  padding: 0;
+		  border: 1px solid rgb(136, 136, 136);
+		  width: 80%;
+		  box-shadow: 0 4px 8px 0 #0f3774,0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		  -webkit-animation-name: animatetop;
+		  -webkit-animation-duration: 0.4s;
+		  animation-name: animatetop;
+		  animation-duration: 0.4s;
+		  color: white;
+		  
+		}
+		
+		@-webkit-keyframes animatetop {
+		  from {top:-300px; opacity:0} 
+		  to {top:0; opacity:1}
+		}
+		
+		@keyframes animatetop {
+		  from {top:-300px; opacity:0}
+		  to {top:0; opacity:1}
+		}
+		
+		.close {
+		  color: white;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+		
+		.close:hover,
+		.close:focus {
+		  color: rgb(0, 0, 0);
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		.close2 {
+		  color: white;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+		
+		.close2:hover,
+		.close2:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		
+		.modal-header {
+		  padding: 2px 16px;
+		  background-image: linear-gradient(to right, #0f3774, #081c3b);
+		  color: white;
+		}
+		
+		.modal-body {padding: 2px 16px;}
+		
+		.modal-footer {
+		  padding: 2px 16px;
+		  background-image: linear-gradient(to right, #0f3774, #081c3b);
+		  color: white;
+		}
+		.tablecontainer th h1 {
+		font-weight: bold;
+		font-size: 1em;
+		text-align: left;
+		color: #ffffff;
+	}
+
+	.tablecontainer td {
+		font-weight: normal;
+		font-size: 1em;
+		-webkit-box-shadow: 0 2px 2px -2px #0E1119;
+		-moz-box-shadow: 0 2px 2px -2px #0E1119;
+		box-shadow: 0 2px 2px -2px #0E1119;
+	}
+
+	.tablecontainer {
+		text-align: left;
+		overflow: hidden;
+		width: 80%;
+		margin: 0 auto;
+		display: table;
+		padding: 0 0 8em 0;
+	}
+
+	.tablecontainer td,
+	.tablecontainer th {
+		padding-bottom: 2%;
+		padding-top: 2%;
+		padding-left: 2%;
+	}
+
+	/* Background-color of the odd rows */
+	.tablecontainer tr:nth-child(odd) {
+		background-color: #081c3b;
+	}
+	/* Background-color of the even rows */
+	.tablecontainer tr:nth-child(even) {
+		background-color: #0f3774;
+	}
+	/* Background-color of the header */
+	.tablecontainer th {
+		background-color: #f1ad27;
+	}
+
+	.tablecontainer td:first-child {
+		color: rgb(241, 240, 236);
+	}
+
+	.tablecontainer tr:hover {
+		background-color: #f1ad27;
+		-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+		-moz-box-shadow: 0 6px 6px -6px #0E1119;
+		box-shadow: 0 6px 6px -6px #0E1119;
+	}
+
+	.tablecontainer td:hover {
+		background-color: #0f3774;
+		color: #ffffff;
+		font-weight: bold;
+		box-shadow: #0f3774 -1px 1px, #0f3774 -2px 2px, #0f3774 -3px 3px, #0f3774 -4px 4px, #0f3774 -5px 5px, #0f3774 -6px 6px;
+		transform: translate3d(6px, -6px, 0);
+		transition-delay: 0s;
+		transition-duration: 0.4s;
+		transition-property: all;
+		transition-timing-function: line;
+	}
+
+	@media (max-width: 800px) {
+
+		.tablecontainer td:nth-child(4),
+		.tablecontainer th:nth-child(4) {
+			display: none;
+		}
+	}	
+		</style>
+		<style>
+.menu-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.menu-image {
+    height: 14em;
+    width: 16em;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+.menu-title {
+    font: 1.3em sans-serif;
+    color: white;
+    font-family: 'Libre Baskerville', sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #081c3b;
+    border-radius: 5px;
+    width: 150px; /* Adjust the width as needed */
+    height: 55px;
+    padding: 5px; /* Adjust padding for internal spacing */
+    margin: 0; /* Remove any margin */
+    font-size: 14px; /* Adjust font size */
+    box-shadow: 0px 0px 8px #f1ad27;
+    list-style: none;
+}
+
+.menu-container:hover .dropdown-menu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #081c3b;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0px 0px 8px #f1ad27;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Disable pointer events */
+}
+
+.dropdown-menu li:hover .submenu {
+    display: block;
+    opacity: 1; /* Show submenu */
+    pointer-events: auto; /* Enable pointer events */
+}
+
+.menu-link, .submenu-link {
+    font-family: 'Libre Baskerville', sans-serif;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.menu-link:hover, .submenu-link:hover {
+    background-color: #081c3b;
+}
+
+		</style>
+		<style>
+			/* Style for the rectangular container */
+			.section-container {
+				background-color: #081c3b; 
+				border-radius: 40px; 
+				border:none;
+				padding: 40px; 
+				box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); 
+				max-width: 800px;
+				margin: 0 auto; 
+			}
+		
+			.section-content {
+				color: #fff;
+				text-align: center; 
+			}
+		</style>
+		<style>
+			.bordered-section {
+				background-color: #081c3b;
+				border-top: 0.35em solid transparent; /* Top border */
+				border-image: linear-gradient(to right, #997333 0%, #FFC054 50%, #FFE89E 75%, #FEFACA 100%);
+				border-image-slice: 1;
+				border-image-width: 0 0 0.5em 0; /* top, right, bottom, left */
+				border-bottom: 0.35em solid transparent; /* Bottom border */
+				border-image: linear-gradient(to right, #997333 0%, #FFC054 50%, #FFE89E 75%, #FEFACA 100%);
+				border-image-slice: 1;
+				border-image-width: 0 0 0.5em 0; /* top, right, bottom, left */
+				padding: 0px 0; /* Add some padding for better spacing */
+			}
+		</style>
+		<style>   
+		img {
+			overflow: hidden;
+			display: inline-block;
+			margin: 10px;
+			width: 200px; /* Adjust width as needed */
+			height: auto; /* Maintains aspect ratio */
+			transition: transform 0.2s ease-in-out; /* Transition effect on transform */
+		  }
+		  
+		  img:hover {
+			transform: scale(1.1); /* Scale up by 10% on hover */
+		  }
+		  
+		  </style>
+	</head>
+	<body class="is-preload landing">
+		
+		<header id="header" style="background-color: #0D2F63;">
+			<h1 id="logo"><a href="index.html" style="font-family: 'Libre Baskerville', sans-serif; font-size: 20px;">RNPSMUN 2024</a></h1>
+			<div>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" style="font-family: 'Libre Baskerville', sans-serif">Home</a></li>
+						<li>
+							<a href="#"style="font-family: 'Libre Baskerville', sans-serif">Committees</a>
+							<ul>
+								<li><a href="unsc.html" style="font-family: 'Libre Baskerville', sans-serif">UNSC </a></li>
+								<li><a href="loksabha.html"style="font-family: 'Libre Baskerville', sans-serif">Lok Sabha</a></li>
+								<li>
+									<a href="#"style="font-family: 'Libre Baskerville', sans-serif">HJCC</a>
+									<ul>
+										<li><a href="HJCC_British Raj.html"style="font-family: 'Libre Baskerville', sans-serif">HJCC- British Raj</a></li>
+										<li>
+											<a href="HJCC_Indian Sepoys.html"style="font-family: 'Libre Baskerville', sans-serif">HJCC-Indian Sepoys</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="ipc.html"style="font-family: 'Libre Baskerville', sans-serif">IPC</a></li>
+							</ul>
+						</li>
+						<li><a href="eb.html"style="font-family: 'Libre Baskerville', sans-serif">Secretariat</a></li>
+						<li>
+							<a href="#"style="font-family: 'Libre Baskerville', sans-serif">Delegate Materials</a>
+							<ul>
+								<li><a href="handbook.pdf"style="font-family: 'Libre Baskerville', sans-serif">Delegate Handbook</a></li>
+								<li>
+									<a href="#"style="font-family: 'Libre Baskerville', sans-serif">Background Guides</a>
+
+									<ul>
+										<li><a href="https://docs.google.com/document/d/1HIuRVPQzwrpS8Pj9imeI-K9NxlkOrVLLS0fs-4iHhzA/edit?usp=sharing"style="font-family: 'Georgia', sans-serif">UNSC </a></li>
+										<li><a href="https://docs.google.com/document/d/1YA56dRavay-GHkLPXihtKvP79pVeao9nWqh77X4Vv3c/edit?usp=sharing"style="font-family: 'Georgia', sans-serif">Lok Sabha</a></li>
+										<li><a href="https://docs.google.com/document/d/1X4bSdjrEEa-680HpH9EICVP5eAXg2BpcIYS6g8mgzZ0/edit?usp=drivesdk"style="font-family: 'Georgia', sans-serif">HJCC</a></li>
+										<li><a href="https://docs.google.com/document/d/14y-RHk61HyWi1TnPdGcxSk64F2RhuX3S1JZ2xVhtCc0/edit?usp=sharing"style="font-family: 'Georgia', sans-serif">IPC</a></li>
+									</ul>
+
+								</li>
+
+								<li>
+									<a href="https://drive.google.com/drive/u/1/folders/1V2zTnMqBSRimD45uQV40Ldeu9UmN6hj6"style="font-family: 'Libre Baskerville', sans-serif">Matrix</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="contactus.html"style="font-family: 'Libre Baskerville', sans-serif">Contact Us</a></li>
+						<!--<li><a href="credits.html">Tech Team</a></li>-->
+						<li><a href="guidelines.html"style="font-family: 'Libre Baskerville', sans-serif">Guidelines</a></li> 
+						<li><a href="#" class="button primary" style="font-family: 'Libre Baskerville', sans-serif;
+							background: linear-gradient(to right, #997333 0%, #FFC054 50%, #FFE89E 75%, #FEFACA 100%);
+							border-image: none;">
+							<b style="font-size: 0.9em;font-family: 'Libre Baskerville', serif;color: #081c3b;">REGISTRATION</b>
+						</a><ul>
+							<li><a href="https://forms.gle/Gojn3321e5ipS5SA6"style="font-family: 'Libre Baskerville', sans-serif">REGISTRATION LINK </a></li>
+							 
+						</ul></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+			<!-- Banner -->
+			<div style="font-family: 'Libre Baskerville', sans-serif;">
+				<section id="banner">
+					<div class="content">
+						<center>
+							<span class="image"></span><br>
+							<div style="font-family: 'Libre Baskerville';" class="col-4 col-12-large">
+								<strong><p style="font-size:80px;">Veritas et lux</p></strong>
+							</div>
+							<p style="font-family: 'Libre Baskerville', sans-serif; font-size: 40px;">
+								<strong>22<sup>nd</sup> &  23<sup>rd</sup> 						
+									<br><br>July 2024</strong></p>
+							
+								
+						</center>
+						<div id="timer" style="text-align: center;
+						padding: 90px 70px;
+						font-family: sans-serif;	       
+						font-weight: lighter;"></div>
+					
+					</p> 
+						<center><p style="font-size: 01.69em;color: #f1ad27;font-family: 'Libre Baskerville', serif;;font-style: italic;"> <b style="font-size: 1em;color: #ffffff;font-family: 'Libre Baskerville', serif;;font-style: bold;"> The future belongs to those who believe in the beauty of their dreams.  <br> - Eleanor Roosevelt</b></p></center>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+			<!-- One -->
+			<div class="bordered-section" style="border-bottom-width: 0.6em;border-top-width: 0.6em;">
+				<section id="one" class="wrapper style1 special fade-up">
+					<div id="page-wrapper">
+						<div class="content">
+							<span class="image fit main" style="background-image: linear-gradient(to right, #0f3774, #081c3b) ;"></span>
+							<div class="container">
+								<div class="row">
+									<div class="col-4 col-12-medium">
+										<header>
+											<h2 style="font-family: 'Libre Baskerville',sans-serif"><img src="images/npslogo.png" alt="" /><br>WHAT IS<br> R-NPSMUN?</h2>
+											<p style="font-size: 20px;">NPS Rajajinagar proudly presents the eighth edition of R-NPSMUN!</p>
+										</header>
+									</div>
+									<div class="col-4 col-12-medium" style="font-size: 20px;font-family: 'Georgia',sans-serif;">
+										<p>An amalgamation of consistent committees fused with a few unconventional ones, we have ensured that each delegate, new or experienced, has something to look forward to. Delegates will have to think on their feet to keep up with the pace of the debate, combating the obstacles posed, while sticking to the portfolios represented.</p>
+									</div>
+									<div class="col-4 col-12-medium" style="font-size: 20px;font-family: 'Georgia',sans-serif;">
+										<p>Alliances will be made, strategies devised, while keeping the nations’ best interests at heart. Factual knowledge along with rational arbitrations will help sail you through! So delegates, come be a part of this exhilarating experience!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#two" class="goto-next scrolly">Next</a>
+					</div>
+				</section>
+			</div>
+				<br>
+				<br>
+				<br>
+				<div class="section-container">
+					<section id="two" class="wrapper style1 special fade-up">
+						<div class="container">
+							<div id="page-wrapper">
+								<header class="major">
+									<h2>Secretary General of RNPSMUN 2024</h2>
+									<img src="images/mansi.jpg" class="image-hover-effect" style="border-radius: 50%; height: 20em; width: 20em;" alt="" /><p style="font-size: 1.5em;">Mansi Hiremath</p><br>
+								</header>
+								<style>
+									header.major:after {
+										content: '';
+										display: inline-block;
+										height: 0.45em;
+										width: 100%;
+										max-width: 250em;
+										background: linear-gradient(to right, #997333 0%, #FFC054 50%, #FFE89E 75%, #FEFACA 100%);
+										border-radius: 25em;
+									}
+								</style>
+					<footer class="major">
+						<p style="font-size:125%;font-family: 'Georgia',sans-serif;">As a passionate leader carrying a contagious smile, she commands respect effortlessly. Her fervour drives her relentless pursuit of excellence, evident in her tireless work ethic which her friends like to call ‘concerning sleep schedule’. Exceptional problem solving skills allow her to navigate through any challenge thrown at her. 
+							Her charismatic personality ensures that her leadership style has a little flair to it.
+							Gracefully wearing her heart on her sleeve, she approaches those in need with a kind smile and a spirit that’s all set to do everything to make them feel better. Striving to be nothing but the best, she holds herself at high standards that she isn’t afraid to reach. 
+							 <br><br>
+							This is Mansi Hiremath, Secretary General of R-NPS MUN’24: The Eighth Edition.</p>
+						<ul class="actions special">
+							<li><a class="button" id="myBtn" class="special">LETTER FROM THE SECRETARY GENERAL</a></li>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+									<div class="modal-header">
+									<span class="close">&times;</span>
+									<h2>LETTER FROM THE SECRETARY GENERAL</h2>
+									</div>
+									<div class="modal-body">
+									<p align="left">Dear Delegates,<br><br>
+										&emsp;&emsp;&emsp; As Secretary-General of R-NPSMUN 2024: The 7th Edition, I am thrilled to extend my warmest greetings to each and every one of you.
+
+										Going from a shy 8th grader to being the Sec Gen of a MUN has been one of the most fulfilling and validating experiences of my life. That is what I hope MUN will become for you, it is more than fiery debates and intensive research, it is the ability to make lifelong connections and unforgettable memories. Whether it is your first time attending a MUN or your tenth, I promise R-NPSMUN 2024 will be one to remember, our top-notch Executive Board and dedicated Secretariat have done everything they can to ensure a smooth conference for you all. So I urge you, my dear delegates, to seize this opportunity, immerse yourselves in the world of diplomacy, and leave no stone unturned in your pursuit of excellence. I have immense faith in your ability to take R-NPSMUN to its pinnacle. </p>
+									<p align="left">Get ready to join the madness, embrace the chaos, and let your inner diplomat shine. Remember, it's not just about winning awards and accolades. It's about showcasing your eloquence while managing to keep a straight face and mastering the art of diplomatic charm with a smile.
+
+										Please feel free to reach out to me for anything, before or during the conference.</p>
+									<p align="left">May the odds be ever in your favour!</p>
+									</div>
+									<div class="modal-footer">
+									<h3>-Mansi Hiremath</h3>
+									</div>
+								</div>
+								</div>
+						</ul>
+					</footer>
+				</div>
+				<a href="#three" class="scrolly"></a>
+			    </section>
+			    
+				<hr>
+			
+			
+			<hr>
+			<!-- Four -->
+			<section id="Four" class="wrapper style1 special fade-up">
+				<div class="container">
+					<header class="major">
+						<h2>The Committees</h2>
+						<p>Four Committees, Riveting and Thrilling</p>
+					</header>
+					<section class="features">
+					<table>
+						<tbody>
+						<tr>
+						<a href='unsc.html'>
+							<div style="border-radius: 100%; text-align: center;font-family: 'Libre Baskerville',sans-serif;">
+								<img src="./images/comlog/UNSC.png" style="height : 14em; width : 16em; left: 50%; border-radius: 50%;overflow: visible; ">
+								<h1 style="font: 1.3em sans-serif;  color:white ;font-family: 'Libre Baskerville',sans-serif; text-transform: uppercase"
+									href='unsc.html'>United Nations Security Council</h1>
+							</div>
+						</a><br>
+						
+						<a href='loksabha.html'>
+								<div style="border-radius: 100%; text-align: center">
+									<img src="./images/comlog/LS.png" style="height : 14em; width : 16em; left: 50%; border-radius: 50%; overflow: visible; ">
+									<h1 style="font: 1.3em sans-serif;  color:white ;font-family: 'Libre Baskerville',sans-serif; text-transform: uppercase"
+										href='loksabha.html'>Lok Sabha</h1>
+								</div>
+						</a><br>
+						
+						<div style="border-radius: 100%; text-align: center">
+							<div class="menu-container">
+								<img src="./images/comlog/HJCC.png" class="menu-image">
+								<h1 class="menu-title">Historic Joint Crisis Committee</h1>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="menu-link">HJCC</a>
+										<ul class="submenu">
+											<li><a href="HJCC_British Raj.html" class="submenu-link">HJCC - British Raj</a></li>
+											<li><a href="HJCC_Indian Sepoys.html" class="submenu-link">HJCC - Indian Sepoys</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<br>
+						<a href='ipc.html'>
+								<div style="border-radius: 100%; text-align: center">
+									<img src="./images/comlog/IPC.png" style="height : 14em; width : 16em; left: 50%; border-radius: 50%; overflow: visible;">
+									<h1 style="font: 1.3em sans-serif;  color:white ;font-family: 'Libre Baskerville',sans-serif; text-transform: uppercase"
+										href='ipc.html'>International Press Corps</h1>
+								</div>
+						</a><br>
+					</tr></tbody></table>
+				</div>
+			</section>
+		</div>
+		<hr>
+			<!-- Three -->
+				<section id="Four">
+					<div id="main" class="wrapper style1">
+						<div class="container">
+							<header class="major">
+								<h2>The Schedule</h2>
+								<p>Reporting time for Inaugural: 8:30 am</p>
+							</header>
+	
+							<!-- Content -->
+								<section id="content">
+									<h2 align="center">Day 1</h2>
+									<table class="tablecontainer">
+										<thead>
+											<tr>
+												<th><h3><b style="font-size: 0.9em;font-family: 'Libre Baskerville', serif;color: #081c3b;">TIME</b></h3></th>
+												<th><h3><b style="font-size: 0.9em;font-family: 'Libre Baskerville', serif;color: #081c3b;">EVENT</b></h3></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>8:15 am - 8:45 am</td>
+												<td>Inaugral</td>
+											</tr>
+											<tr>
+												<td>9:00 am - 10:15 am</td>
+												<td>Session 1</td>
+											</tr>
+											<tr>
+												<td>10:15 am - 10:30 am</td>
+												<td>Break</td>
+											</tr>
+											<tr>
+												<td> 10:30 am - 12:30 pm</td>
+												<td>Session 2</td>
+											</tr>
+											<tr>
+												<td> 12:30 pm - 1:00 pm</td>
+												<td>Lunch</td>
+											</tr>
+											<tr>
+												<td> 1:00 pm - 2:45 pm</td>
+												<td>Session 3</td>
+											</tr>
+										</tbody>
+									</table><br><br>
+									
+									<h2 align="center">Day 2</h2>
+									<table class="tablecontainer">
+										<thead>
+											<tr>
+												<th><h3><b style="font-size: 0.9em;font-family: 'Libre Baskerville', serif;color: #081c3b;">TIME</b></h3></th>
+												<th><h3><b style="font-size: 0.9em;font-family: 'Libre Baskerville', serif;color: #081c3b;">EVENT</b></h3></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>8:15 am - 10:15 am</td>
+												<td>Session 4</td>
+											</tr>
+											<tr>
+												<td>10:15 am - 10:30 am</td>
+												<td>Break</td>
+											</tr>
+											<tr>
+												<td>10:30 am - 12:00 pm</td>
+												<td>Session 5</td>
+											</tr>
+											<tr>
+												<td>12:00 pm - 12:30 pm</td>
+												<td>Lunch</td>
+											</tr>
+											<tr>
+												<td>12:30 pm - 1:45 pm</td>
+												<td>Session 6</td>
+											</tr>
+											<tr>
+												<td>2:00 pm - 2:45 pm</td>
+												<td>Closing Ceremony</td>
+											</tr>
+										</tbody>
+									</table>
+								</section>
+	
+						</div>
+					</div>
+					<a href="#Four" class="goto-next scrolly">Next</a>
+				</section>
+
+		
+
+			<!-- Footer -->
+			<footer id="footer">
+                <ul class="icons">
+
+                    <li><a href="https://www.instagram.com/rnpsmun2023/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:rnpsmun24@gmail.com	" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+
+                    <li><a href="tel:08023350361" class="icon solid alt fa-phone"><span class="label">Phone</span></a></li>
+                    <!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+					
+	
+					</ul>
+					<ul class="copyright">
+						<li>&copy; R-NPSMUN Inc. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
