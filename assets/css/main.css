@@ -30,25 +30,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 /* CSS */
-/* Default styles for images and text */
-img, p, h1, h2, h3, h4, h5, h6 {
-  max-width: 100%; /* Ensure images and text do not overflow their containers */
-  height: auto; /* Maintain aspect ratio for images */
-}
-
-/* Media query for screens smaller than 768px (typical mobile screens) */
-@media (max-width: 768px) {
-  img {
-    max-width: 100%; /* Ensure images take full width of the screen */
-    height: auto; /* Allow images to adjust height proportionally */
-  }
-
-  p, h1, h2, h3, h4, h5, h6 {
-    font-size: 16px; /* Adjust text size for better readability on smaller screens */
-    line-height: 1.5; /* Increase line height for better readability */
-    margin: 10px 0; /* Add some vertical spacing between paragraphs and headings */
-  }
-}
 
 img {
     transition: transform 0.3s ease; /* smooth transition for scaling */
